@@ -1,0 +1,1016 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6F4F490A99800E388C7BDE /* Pods_DJI_Warehouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BE709B8F07FC73486C3BEF /* Pods_DJI_Warehouse.framework */; };
+		7B0D21A522150DDB008D3754 /* warehouseItemSample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D21A422150DDB008D3754 /* warehouseItemSample.jpg */; };
+		7B0D21A922150FF3008D3754 /* WarehouseItemFetchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D21A822150FF3008D3754 /* WarehouseItemFetchResponse.swift */; };
+		7B0D21AD2215130E008D3754 /* fetchWarehouseItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B0D21AC2215130E008D3754 /* fetchWarehouseItem.json */; };
+		7B0D21AF22151325008D3754 /* WarehouseItemFetchResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D21AE22151325008D3754 /* WarehouseItemFetchResponseTest.swift */; };
+		7B0D21B12215135E008D3754 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D21B02215135E008D3754 /* FileHelper.swift */; };
+		7B35F64E2202B9610066515F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F64D2202B9610066515F /* Logger.swift */; };
+		7B35F6542202D7E00066515F /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F6532202D7E00066515F /* MenuListViewController.swift */; };
+		7B35F6582202D97B0066515F /* MenuListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F6562202D97B0066515F /* MenuListCollectionViewCell.swift */; };
+		7B35F6592202D97B0066515F /* MenuListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B35F6572202D97B0066515F /* MenuListCollectionViewCell.xib */; };
+		7B35F65B2202E58F0066515F /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F65A2202E58F0066515F /* ThemeManager.swift */; };
+		7B35F65E2202E7000066515F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F65D2202E7000066515F /* BaseViewController.swift */; };
+		7B35F6602202EA650066515F /* MenuListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F65F2202EA650066515F /* MenuListCellViewModel.swift */; };
+		7B35F6622202F0B80066515F /* CGPoint+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35F6612202F0B80066515F /* CGPoint+Helper.swift */; };
+		7B4A356021F6F8BE00C0C16C /* DroneCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A355F21F6F8BE00C0C16C /* DroneCameraViewController.swift */; };
+		7B4A356621F7134700C0C16C /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A356521F7134700C0C16C /* NotificationName.swift */; };
+		7B4C251421F807D0001734EC /* DJIProduct+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C251321F807D0001734EC /* DJIProduct+Helper.swift */; };
+		7B4C251621F80A79001734EC /* DJIVideoPreviewer+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C251521F80A79001734EC /* DJIVideoPreviewer+Helper.swift */; };
+		7B4C251A21F84F11001734EC /* UIViewController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C251921F84F11001734EC /* UIViewController+Helper.swift */; };
+		7B4C251C21F85834001734EC /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C251B21F85834001734EC /* PreviewImageViewController.swift */; };
+		7B4C252021F86A1E001734EC /* PreviewImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C251E21F86A1E001734EC /* PreviewImageCollectionViewCell.swift */; };
+		7B4C252121F86A1E001734EC /* PreviewImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4C251F21F86A1E001734EC /* PreviewImageCollectionViewCell.xib */; };
+		7B4C252321F95B02001734EC /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C252221F95B02001734EC /* UIViewController+Navigation.swift */; };
+		7B4C252521F98665001734EC /* DJIMediaManager+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C252421F98665001734EC /* DJIMediaManager+Helper.swift */; };
+		7B4C252821FAD880001734EC /* QRCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C252721FAD880001734EC /* QRCodeHelper.swift */; };
+		7B5B9D1321FED81B00FD356E /* QRCodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B9D1221FED81B00FD356E /* QRCodeListViewController.swift */; };
+		7B618C8A221CEB7C0057C1F8 /* DroneVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B618C89221CEB7C0057C1F8 /* DroneVideoPreviewView.swift */; };
+		7B618C8C221CEEF90057C1F8 /* DroneVideoPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B618C8B221CEEF90057C1F8 /* DroneVideoPreviewView.xib */; };
+		7B618C92221D24630057C1F8 /* VideoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B618C91221D24630057C1F8 /* VideoPreviewViewController.swift */; };
+		7B80E9ED21FAF506006A072C /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80E9EC21FAF506006A072C /* UIImage+Resize.swift */; };
+		7B88BC1A221A83B6007C1250 /* NotiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88BC19221A83B6007C1250 /* NotiLogger.swift */; };
+		7B8B094222112A57006DBBC5 /* WarehouseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B094122112A57006DBBC5 /* WarehouseItem.swift */; };
+		7B8B094422112AC3006DBBC5 /* KerryWarehouseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B094322112AC3006DBBC5 /* KerryWarehouseApi.swift */; };
+		7B8B094622113F99006DBBC5 /* KerryWarehouseDefaultImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B094522113F99006DBBC5 /* KerryWarehouseDefaultImpl.swift */; };
+		7B8B09482211460F006DBBC5 /* KerryWarehouseApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B09472211460F006DBBC5 /* KerryWarehouseApiTest.swift */; };
+		7B8B094A22115B60006DBBC5 /* WarehouseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B094922115B60006DBBC5 /* WarehouseResponse.swift */; };
+		7BA025EF221BE092001F3237 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA025EE221BE092001F3237 /* UIView+Constraint.swift */; };
+		7BA025F1221BFD1B001F3237 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA025F0221BFD1B001F3237 /* UIView+Animation.swift */; };
+		7BA08A8521FEED1000E6C57B /* TestQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA08A8421FEED1000E6C57B /* TestQRViewController.swift */; };
+		7BEE92BB2204227800DAA40D /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE92BA2204227800DAA40D /* BorderView.swift */; };
+		7BEE92C02207E1D100DAA40D /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE92BF2207E1D100DAA40D /* HttpResponse.swift */; };
+		7BEE92C22207E26E00DAA40D /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE92C12207E26E00DAA40D /* ApiEndpoint.swift */; };
+		7BEE92C42207E2F800DAA40D /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE92C32207E2F800DAA40D /* HttpClient.swift */; };
+		7BEE92C62207E3ED00DAA40D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE92C52207E3ED00DAA40D /* HttpMethod.swift */; };
+		A47868D7209AC6DA00DBC666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868C5209AC6DA00DBC666 /* AppDelegate.swift */; };
+		A47868D8209AC6DA00DBC666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47868C6209AC6DA00DBC666 /* Assets.xcassets */; };
+		A47868D9209AC6DA00DBC666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47868C7209AC6DA00DBC666 /* LaunchScreen.storyboard */; };
+		A47868DA209AC6DA00DBC666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47868C9209AC6DA00DBC666 /* Main.storyboard */; };
+		A47868DD209AC6DA00DBC666 /* KeyedInterfaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868CE209AC6DA00DBC666 /* KeyedInterfaceViewController.swift */; };
+		A47868DE209AC6DA00DBC666 /* TimelineElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868D0209AC6DA00DBC666 /* TimelineElementCollectionViewCell.swift */; };
+		A47868DF209AC6DA00DBC666 /* TimelineMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868D1209AC6DA00DBC666 /* TimelineMissionViewController.swift */; };
+		A47868E0209AC6DA00DBC666 /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868D3209AC6DA00DBC666 /* ProductCommunicationManager.swift */; };
+		A47868E1209AC6DA00DBC666 /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868D4209AC6DA00DBC666 /* StartupViewController.swift */; };
+		A47868E2209AC6DA00DBC666 /* DJIImageAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47868D6209AC6DA00DBC666 /* DJIImageAnnotation.swift */; };
+		E114CD1F21FFFEE300944CD0 /* AutoFlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E114CD1E21FFFEE300944CD0 /* AutoFlyViewController.swift */; };
+		E114CD212200058C00944CD0 /* DJIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E114CD202200058C00944CD0 /* DJIHelper.swift */; };
+		E125EA812201B23900F0B044 /* DJIGimbal+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E125EA802201B23900F0B044 /* DJIGimbal+Helper.swift */; };
+		E146DB4D221D3C0F00547E0A /* MoveUntilQRCodeDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146DB4C221D3C0F00547E0A /* MoveUntilQRCodeDetected.swift */; };
+		E146DB4F221D3C3500547E0A /* VirtualStickMissionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146DB4E221D3C3500547E0A /* VirtualStickMissionProtocol.swift */; };
+		E146DB51221D3C8400547E0A /* MoveMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E146DB50221D3C8400547E0A /* MoveMission.swift */; };
+		E16E10E3221C150F0003D41E /* IndoorFlyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E10E2221C150F0003D41E /* IndoorFlyingViewController.swift */; };
+		E17C8D86221E40FD00745E09 /* ScanLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17C8D85221E40FD00745E09 /* ScanLevel.swift */; };
+		E17D511A221139F300AFBD9B /* AutoFlyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D5119221139F300AFBD9B /* AutoFlyHelper.swift */; };
+		E17D511D22113B0100AFBD9B /* RotateMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D511C22113B0100AFBD9B /* RotateMission.swift */; };
+		E17D5121221151DB00AFBD9B /* WarehouseMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D512022114ECE00AFBD9B /* WarehouseMissionViewController.swift */; };
+		E194A04F22141E1F00CE0270 /* SnapShotMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194A04E22141E1F00CE0270 /* SnapShotMission.swift */; };
+		E199BEC2221A5A970063BCDC /* TestRemoteControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199BEC1221A5A970063BCDC /* TestRemoteControllerViewController.swift */; };
+		E1BC23BC221D28460045F938 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BC23BB221D28460045F938 /* Timer.swift */; };
+		E1C788412213E9D90011A5A6 /* WarehouseMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C788402213E9D90011A5A6 /* WarehouseMission.swift */; };
+		E1D0D02721FF080500B6C346 /* Proximity.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E1D0D02621FF080500B6C346 /* Proximity.mlmodel */; };
+		E1DC4779221405C10058F872 /* VirtualStickMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC4778221405C10058F872 /* VirtualStickMission.swift */; };
+		E1DE16CF221BC51200DF82B4 /* DroneStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1DE16CE221BC51200DF82B4 /* DroneStateView.xib */; };
+		E1DE16D1221BC5CE00DF82B4 /* DroneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DE16D0221BC5CE00DF82B4 /* DroneState.swift */; };
+		E1EF424121FADA15001BB96A /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E1EF423F21FAD9F7001BB96A /* MobileNet.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BEE92E6220807BD00DAA40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86985CC11E834EC200577EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86985CC81E834EC200577EC7;
+			remoteInfo = "DJI-Warehouse";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09730C570096B229CD1014C0 /* Pods_DJISDKSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJISDKSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1324009D21FABF94AD89CBEA /* Pods-DJI-Warehouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJI-Warehouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJI-Warehouse/Pods-DJI-Warehouse.debug.xcconfig"; sourceTree = "<group>"; };
+		35BE709B8F07FC73486C3BEF /* Pods_DJI_Warehouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJI_Warehouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C8A5AA21F81DFD00490733 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B0D21A422150DDB008D3754 /* warehouseItemSample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warehouseItemSample.jpg; sourceTree = "<group>"; };
+		7B0D21A822150FF3008D3754 /* WarehouseItemFetchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseItemFetchResponse.swift; sourceTree = "<group>"; };
+		7B0D21AC2215130E008D3754 /* fetchWarehouseItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fetchWarehouseItem.json; sourceTree = "<group>"; };
+		7B0D21AE22151325008D3754 /* WarehouseItemFetchResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseItemFetchResponseTest.swift; sourceTree = "<group>"; };
+		7B0D21B02215135E008D3754 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		7B35F64D2202B9610066515F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7B35F6532202D7E00066515F /* MenuListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
+		7B35F6562202D97B0066515F /* MenuListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B35F6572202D97B0066515F /* MenuListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B35F65A2202E58F0066515F /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		7B35F65D2202E7000066515F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7B35F65F2202EA650066515F /* MenuListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListCellViewModel.swift; sourceTree = "<group>"; };
+		7B35F6612202F0B80066515F /* CGPoint+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Helper.swift"; sourceTree = "<group>"; };
+		7B4A355F21F6F8BE00C0C16C /* DroneCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneCameraViewController.swift; sourceTree = "<group>"; };
+		7B4A356521F7134700C0C16C /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		7B4C251321F807D0001734EC /* DJIProduct+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIProduct+Helper.swift"; sourceTree = "<group>"; };
+		7B4C251521F80A79001734EC /* DJIVideoPreviewer+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIVideoPreviewer+Helper.swift"; sourceTree = "<group>"; };
+		7B4C251921F84F11001734EC /* UIViewController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Helper.swift"; sourceTree = "<group>"; };
+		7B4C251B21F85834001734EC /* PreviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		7B4C251E21F86A1E001734EC /* PreviewImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B4C251F21F86A1E001734EC /* PreviewImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		7B4C252221F95B02001734EC /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		7B4C252421F98665001734EC /* DJIMediaManager+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIMediaManager+Helper.swift"; sourceTree = "<group>"; };
+		7B4C252721FAD880001734EC /* QRCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeHelper.swift; sourceTree = "<group>"; };
+		7B5B9D1221FED81B00FD356E /* QRCodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeListViewController.swift; sourceTree = "<group>"; };
+		7B618C89221CEB7C0057C1F8 /* DroneVideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneVideoPreviewView.swift; sourceTree = "<group>"; };
+		7B618C8B221CEEF90057C1F8 /* DroneVideoPreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DroneVideoPreviewView.xib; sourceTree = "<group>"; };
+		7B618C91221D24630057C1F8 /* VideoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreviewViewController.swift; sourceTree = "<group>"; };
+		7B80E9EC21FAF506006A072C /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		7B88BC19221A83B6007C1250 /* NotiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiLogger.swift; sourceTree = "<group>"; };
+		7B8B094122112A57006DBBC5 /* WarehouseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseItem.swift; sourceTree = "<group>"; };
+		7B8B094322112AC3006DBBC5 /* KerryWarehouseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerryWarehouseApi.swift; sourceTree = "<group>"; };
+		7B8B094522113F99006DBBC5 /* KerryWarehouseDefaultImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerryWarehouseDefaultImpl.swift; sourceTree = "<group>"; };
+		7B8B09472211460F006DBBC5 /* KerryWarehouseApiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KerryWarehouseApiTest.swift; sourceTree = "<group>"; };
+		7B8B094922115B60006DBBC5 /* WarehouseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseResponse.swift; sourceTree = "<group>"; };
+		7BA025EE221BE092001F3237 /* UIView+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		7BA025F0221BFD1B001F3237 /* UIView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		7BA08A8421FEED1000E6C57B /* TestQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestQRViewController.swift; sourceTree = "<group>"; };
+		7BEE92BA2204227800DAA40D /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		7BEE92BF2207E1D100DAA40D /* HttpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		7BEE92C12207E26E00DAA40D /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		7BEE92C32207E2F800DAA40D /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		7BEE92C52207E3ED00DAA40D /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		7BEE92E1220807BD00DAA40D /* DJI-WarehouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DJI-WarehouseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEE92E5220807BD00DAA40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86985CC91E834EC200577EC7 /* DJI-Warehouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DJI-Warehouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47868C5209AC6DA00DBC666 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A47868C6209AC6DA00DBC666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47868C8209AC6DA00DBC666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A47868CA209AC6DA00DBC666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47868CC209AC6DA00DBC666 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47868CE209AC6DA00DBC666 /* KeyedInterfaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedInterfaceViewController.swift; sourceTree = "<group>"; };
+		A47868D0209AC6DA00DBC666 /* TimelineElementCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		A47868D1209AC6DA00DBC666 /* TimelineMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineMissionViewController.swift; sourceTree = "<group>"; };
+		A47868D3209AC6DA00DBC666 /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
+		A47868D4209AC6DA00DBC666 /* StartupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
+		A47868D6209AC6DA00DBC666 /* DJIImageAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJIImageAnnotation.swift; sourceTree = "<group>"; };
+		C3975D6FBB911BF3C218378C /* Pods-DJI-Warehouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJI-Warehouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJI-Warehouse/Pods-DJI-Warehouse.release.xcconfig"; sourceTree = "<group>"; };
+		E114CD1E21FFFEE300944CD0 /* AutoFlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlyViewController.swift; sourceTree = "<group>"; };
+		E114CD202200058C00944CD0 /* DJIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIHelper.swift; sourceTree = "<group>"; };
+		E125EA802201B23900F0B044 /* DJIGimbal+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIGimbal+Helper.swift"; sourceTree = "<group>"; };
+		E146DB4C221D3C0F00547E0A /* MoveUntilQRCodeDetected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveUntilQRCodeDetected.swift; sourceTree = "<group>"; };
+		E146DB4E221D3C3500547E0A /* VirtualStickMissionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualStickMissionProtocol.swift; sourceTree = "<group>"; };
+		E146DB50221D3C8400547E0A /* MoveMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMission.swift; sourceTree = "<group>"; };
+		E16E10E2221C150F0003D41E /* IndoorFlyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorFlyingViewController.swift; sourceTree = "<group>"; };
+		E17C8D85221E40FD00745E09 /* ScanLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanLevel.swift; sourceTree = "<group>"; };
+		E17D5119221139F300AFBD9B /* AutoFlyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFlyHelper.swift; sourceTree = "<group>"; };
+		E17D511C22113B0100AFBD9B /* RotateMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateMission.swift; sourceTree = "<group>"; };
+		E17D511F22114ECE00AFBD9B /* TimelineElementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		E17D512022114ECE00AFBD9B /* WarehouseMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseMissionViewController.swift; sourceTree = "<group>"; };
+		E194A04E22141E1F00CE0270 /* SnapShotMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapShotMission.swift; sourceTree = "<group>"; };
+		E199BEC1221A5A970063BCDC /* TestRemoteControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRemoteControllerViewController.swift; sourceTree = "<group>"; };
+		E1BC23BB221D28460045F938 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		E1C788402213E9D90011A5A6 /* WarehouseMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarehouseMission.swift; sourceTree = "<group>"; };
+		E1D0D02621FF080500B6C346 /* Proximity.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Proximity.mlmodel; path = "cv-model/model_bin/Proximity.mlmodel"; sourceTree = SOURCE_ROOT; };
+		E1DC4778221405C10058F872 /* VirtualStickMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualStickMission.swift; sourceTree = "<group>"; };
+		E1DE16CE221BC51200DF82B4 /* DroneStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DroneStateView.xib; sourceTree = "<group>"; };
+		E1DE16D0221BC5CE00DF82B4 /* DroneState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneState.swift; sourceTree = "<group>"; };
+		E1EF423F21FAD9F7001BB96A /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BEE92DE220807BD00DAA40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86985CC61E834EC200577EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6F4F490A99800E388C7BDE /* Pods_DJI_Warehouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6F263FBC093B7B6FB6EF51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41C8A5AA21F81DFD00490733 /* AVFoundation.framework */,
+				09730C570096B229CD1014C0 /* Pods_DJISDKSwiftDemo.framework */,
+				35BE709B8F07FC73486C3BEF /* Pods_DJI_Warehouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B35F64C2202B94B0066515F /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				7B35F64D2202B9610066515F /* Logger.swift */,
+				7B88BC19221A83B6007C1250 /* NotiLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		7B35F64F2202D6D00066515F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B618C86221CE9E00057C1F8 /* DroneVideoPreviewView */,
+				E199BEC0221A5A500063BCDC /* DroneState */,
+				E17D511E22114EBF00AFBD9B /* WarehouseMission */,
+				7B35F65C2202E6EE0066515F /* Common */,
+				7B35F6522202D75C0066515F /* MenuList */,
+				7B35F6512202D71F0066515F /* Debug */,
+				7B35F6502202D7140066515F /* Starup */,
+				E114CD1D21FFFEAF00944CD0 /* AutoFly */,
+				A47868CF209AC6DA00DBC666 /* Missions */,
+				A47868CD209AC6DA00DBC666 /* KeyedInterfaces */,
+				7B4A355E21F6F89400C0C16C /* Camera */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7B35F6502202D7140066515F /* Starup */ = {
+			isa = PBXGroup;
+			children = (
+				A47868D4209AC6DA00DBC666 /* StartupViewController.swift */,
+			);
+			path = Starup;
+			sourceTree = "<group>";
+		};
+		7B35F6512202D71F0066515F /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				7BA08A8421FEED1000E6C57B /* TestQRViewController.swift */,
+				E199BEC1221A5A970063BCDC /* TestRemoteControllerViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		7B35F6522202D75C0066515F /* MenuList */ = {
+			isa = PBXGroup;
+			children = (
+				7B35F6552202D9600066515F /* Cells */,
+				7B35F6532202D7E00066515F /* MenuListViewController.swift */,
+			);
+			path = MenuList;
+			sourceTree = "<group>";
+		};
+		7B35F6552202D9600066515F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B35F6562202D97B0066515F /* MenuListCollectionViewCell.swift */,
+				7B35F6572202D97B0066515F /* MenuListCollectionViewCell.xib */,
+				7B35F65F2202EA650066515F /* MenuListCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7B35F65C2202E6EE0066515F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7B35F65D2202E7000066515F /* BaseViewController.swift */,
+				7BEE92BA2204227800DAA40D /* BorderView.swift */,
+				E16E10E2221C150F0003D41E /* IndoorFlyingViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7B4A355E21F6F89400C0C16C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				7B4C251D21F86A09001734EC /* Cells */,
+				E1D0D02621FF080500B6C346 /* Proximity.mlmodel */,
+				E1EF423F21FAD9F7001BB96A /* MobileNet.mlmodel */,
+				7B4A355F21F6F8BE00C0C16C /* DroneCameraViewController.swift */,
+				7B4C251B21F85834001734EC /* PreviewImageViewController.swift */,
+				7B5B9D1221FED81B00FD356E /* QRCodeListViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		7B4A356421F7133100C0C16C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A356521F7134700C0C16C /* NotificationName.swift */,
+				7B4C251321F807D0001734EC /* DJIProduct+Helper.swift */,
+				7B4C251521F80A79001734EC /* DJIVideoPreviewer+Helper.swift */,
+				7B4C251921F84F11001734EC /* UIViewController+Helper.swift */,
+				7B4C252221F95B02001734EC /* UIViewController+Navigation.swift */,
+				7B4C252421F98665001734EC /* DJIMediaManager+Helper.swift */,
+				7B80E9EC21FAF506006A072C /* UIImage+Resize.swift */,
+				E125EA802201B23900F0B044 /* DJIGimbal+Helper.swift */,
+				7B35F6612202F0B80066515F /* CGPoint+Helper.swift */,
+				7BA025EE221BE092001F3237 /* UIView+Constraint.swift */,
+				7BA025F0221BFD1B001F3237 /* UIView+Animation.swift */,
+				E1BC23BB221D28460045F938 /* Timer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7B4C251D21F86A09001734EC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7B4C251E21F86A1E001734EC /* PreviewImageCollectionViewCell.swift */,
+				7B4C251F21F86A1E001734EC /* PreviewImageCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7B4C252621FAD86C001734EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B4C252721FAD880001734EC /* QRCodeHelper.swift */,
+				E114CD202200058C00944CD0 /* DJIHelper.swift */,
+				E17D5119221139F300AFBD9B /* AutoFlyHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B618C86221CE9E00057C1F8 /* DroneVideoPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				7B618C91221D24630057C1F8 /* VideoPreviewViewController.swift */,
+				7B618C89221CEB7C0057C1F8 /* DroneVideoPreviewView.swift */,
+				7B618C8B221CEEF90057C1F8 /* DroneVideoPreviewView.xib */,
+			);
+			path = DroneVideoPreviewView;
+			sourceTree = "<group>";
+		};
+		7BEE92BC2207E18D00DAA40D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE92BF2207E1D100DAA40D /* HttpResponse.swift */,
+				7BEE92C12207E26E00DAA40D /* ApiEndpoint.swift */,
+				7BEE92C32207E2F800DAA40D /* HttpClient.swift */,
+				7BEE92C52207E3ED00DAA40D /* HttpMethod.swift */,
+				7B8B094322112AC3006DBBC5 /* KerryWarehouseApi.swift */,
+				7B8B094522113F99006DBBC5 /* KerryWarehouseDefaultImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7BEE92C72207E9C200DAA40D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B8B094122112A57006DBBC5 /* WarehouseItem.swift */,
+				7B8B094922115B60006DBBC5 /* WarehouseResponse.swift */,
+				7B0D21A822150FF3008D3754 /* WarehouseItemFetchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BEE92E2220807BD00DAA40D /* DJI-WarehouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B0D21AC2215130E008D3754 /* fetchWarehouseItem.json */,
+				7B0D21A422150DDB008D3754 /* warehouseItemSample.jpg */,
+				7BEE92E5220807BD00DAA40D /* Info.plist */,
+				7B8B09472211460F006DBBC5 /* KerryWarehouseApiTest.swift */,
+				7B0D21AE22151325008D3754 /* WarehouseItemFetchResponseTest.swift */,
+				7B0D21B02215135E008D3754 /* FileHelper.swift */,
+			);
+			path = "DJI-WarehouseTests";
+			sourceTree = "<group>";
+		};
+		86985CC01E834EC200577EC7 = {
+			isa = PBXGroup;
+			children = (
+				A47868C4209AC6DA00DBC666 /* DJISDKSwiftDemo */,
+				7BEE92E2220807BD00DAA40D /* DJI-WarehouseTests */,
+				86985CCA1E834EC200577EC7 /* Products */,
+				C0C7419B2667BCEE0BB6C689 /* Pods */,
+				0B6F263FBC093B7B6FB6EF51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86985CCA1E834EC200577EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86985CC91E834EC200577EC7 /* DJI-Warehouse.app */,
+				7BEE92E1220807BD00DAA40D /* DJI-WarehouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47868C4209AC6DA00DBC666 /* DJISDKSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E17D511B22113A5800AFBD9B /* DJIMission */,
+				A47868C5209AC6DA00DBC666 /* AppDelegate.swift */,
+				A47868C6209AC6DA00DBC666 /* Assets.xcassets */,
+				A47868CC209AC6DA00DBC666 /* Info.plist */,
+				A47868C7209AC6DA00DBC666 /* LaunchScreen.storyboard */,
+				A47868C9209AC6DA00DBC666 /* Main.storyboard */,
+				7BEE92C72207E9C200DAA40D /* Models */,
+				7BEE92BC2207E18D00DAA40D /* Network */,
+				7B4A356421F7133100C0C16C /* Extensions */,
+				7B4C252621FAD86C001734EC /* Helpers */,
+				7B35F64C2202B94B0066515F /* Logger */,
+				A47868D2209AC6DA00DBC666 /* Managers */,
+				A47868D5209AC6DA00DBC666 /* UIObjects */,
+				7B35F64F2202D6D00066515F /* Views */,
+			);
+			path = DJISDKSwiftDemo;
+			sourceTree = "<group>";
+		};
+		A47868CD209AC6DA00DBC666 /* KeyedInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A47868CE209AC6DA00DBC666 /* KeyedInterfaceViewController.swift */,
+			);
+			path = KeyedInterfaces;
+			sourceTree = "<group>";
+		};
+		A47868CF209AC6DA00DBC666 /* Missions */ = {
+			isa = PBXGroup;
+			children = (
+				A47868D0209AC6DA00DBC666 /* TimelineElementCollectionViewCell.swift */,
+				A47868D1209AC6DA00DBC666 /* TimelineMissionViewController.swift */,
+			);
+			path = Missions;
+			sourceTree = "<group>";
+		};
+		A47868D2209AC6DA00DBC666 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A47868D3209AC6DA00DBC666 /* ProductCommunicationManager.swift */,
+				7B35F65A2202E58F0066515F /* ThemeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A47868D5209AC6DA00DBC666 /* UIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A47868D6209AC6DA00DBC666 /* DJIImageAnnotation.swift */,
+			);
+			path = UIObjects;
+			sourceTree = "<group>";
+		};
+		C0C7419B2667BCEE0BB6C689 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1324009D21FABF94AD89CBEA /* Pods-DJI-Warehouse.debug.xcconfig */,
+				C3975D6FBB911BF3C218378C /* Pods-DJI-Warehouse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E114CD1D21FFFEAF00944CD0 /* AutoFly */ = {
+			isa = PBXGroup;
+			children = (
+				E114CD1E21FFFEE300944CD0 /* AutoFlyViewController.swift */,
+			);
+			path = AutoFly;
+			sourceTree = "<group>";
+		};
+		E17D511B22113A5800AFBD9B /* DJIMission */ = {
+			isa = PBXGroup;
+			children = (
+				E17D511C22113B0100AFBD9B /* RotateMission.swift */,
+				E1C788402213E9D90011A5A6 /* WarehouseMission.swift */,
+				E1DC4778221405C10058F872 /* VirtualStickMission.swift */,
+				E194A04E22141E1F00CE0270 /* SnapShotMission.swift */,
+				E146DB50221D3C8400547E0A /* MoveMission.swift */,
+				E146DB4C221D3C0F00547E0A /* MoveUntilQRCodeDetected.swift */,
+				E146DB4E221D3C3500547E0A /* VirtualStickMissionProtocol.swift */,
+				E17C8D85221E40FD00745E09 /* ScanLevel.swift */,
+			);
+			path = DJIMission;
+			sourceTree = "<group>";
+		};
+		E17D511E22114EBF00AFBD9B /* WarehouseMission */ = {
+			isa = PBXGroup;
+			children = (
+				E17D511F22114ECE00AFBD9B /* TimelineElementCollectionViewCell.swift */,
+				E17D512022114ECE00AFBD9B /* WarehouseMissionViewController.swift */,
+			);
+			path = WarehouseMission;
+			sourceTree = "<group>";
+		};
+		E199BEC0221A5A500063BCDC /* DroneState */ = {
+			isa = PBXGroup;
+			children = (
+				E1DE16CE221BC51200DF82B4 /* DroneStateView.xib */,
+				E1DE16D0221BC5CE00DF82B4 /* DroneState.swift */,
+			);
+			path = DroneState;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BEE92E0220807BD00DAA40D /* DJI-WarehouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEE92E8220807BD00DAA40D /* Build configuration list for PBXNativeTarget "DJI-WarehouseTests" */;
+			buildPhases = (
+				7BEE92DD220807BD00DAA40D /* Sources */,
+				7BEE92DE220807BD00DAA40D /* Frameworks */,
+				7BEE92DF220807BD00DAA40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BEE92E7220807BD00DAA40D /* PBXTargetDependency */,
+			);
+			name = "DJI-WarehouseTests";
+			productName = "DJI-WarehouseTests";
+			productReference = 7BEE92E1220807BD00DAA40D /* DJI-WarehouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86985CC81E834EC200577EC7 /* DJI-Warehouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86985CDD1E834EC200577EC7 /* Build configuration list for PBXNativeTarget "DJI-Warehouse" */;
+			buildPhases = (
+				A23089ACBCAB63BE42DAD2F1 /* [CP] Check Pods Manifest.lock */,
+				86985CC51E834EC200577EC7 /* Sources */,
+				86985CC61E834EC200577EC7 /* Frameworks */,
+				86985CC71E834EC200577EC7 /* Resources */,
+				8A68B323F021A127CDC7173C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DJI-Warehouse";
+			productName = "SDK Swift Sample";
+			productReference = 86985CC91E834EC200577EC7 /* DJI-Warehouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86985CC11E834EC200577EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = DJI;
+				TargetAttributes = {
+					7BEE92E0220807BD00DAA40D = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = JDFT4SYY26;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 86985CC81E834EC200577EC7;
+					};
+					86985CC81E834EC200577EC7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JDFT4SYY26;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 86985CC41E834EC200577EC7 /* Build configuration list for PBXProject "DJI-Warehouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86985CC01E834EC200577EC7;
+			productRefGroup = 86985CCA1E834EC200577EC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86985CC81E834EC200577EC7 /* DJI-Warehouse */,
+				7BEE92E0220807BD00DAA40D /* DJI-WarehouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BEE92DF220807BD00DAA40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0D21A522150DDB008D3754 /* warehouseItemSample.jpg in Resources */,
+				7B0D21AD2215130E008D3754 /* fetchWarehouseItem.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86985CC71E834EC200577EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47868DA209AC6DA00DBC666 /* Main.storyboard in Resources */,
+				E1DE16CF221BC51200DF82B4 /* DroneStateView.xib in Resources */,
+				7B618C8C221CEEF90057C1F8 /* DroneVideoPreviewView.xib in Resources */,
+				7B35F6592202D97B0066515F /* MenuListCollectionViewCell.xib in Resources */,
+				A47868D8209AC6DA00DBC666 /* Assets.xcassets in Resources */,
+				A47868D9209AC6DA00DBC666 /* LaunchScreen.storyboard in Resources */,
+				7B4C252121F86A1E001734EC /* PreviewImageCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A68B323F021A127CDC7173C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DJI-Warehouse/Pods-DJI-Warehouse-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
+				"${BUILT_PRODUCTS_DIR}/DJIWidget/DJIWidget.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIWidget.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJI-Warehouse/Pods-DJI-Warehouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23089ACBCAB63BE42DAD2F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DJI-Warehouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BEE92DD220807BD00DAA40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0D21AF22151325008D3754 /* WarehouseItemFetchResponseTest.swift in Sources */,
+				7B8B09482211460F006DBBC5 /* KerryWarehouseApiTest.swift in Sources */,
+				7B0D21B12215135E008D3754 /* FileHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86985CC51E834EC200577EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8B094A22115B60006DBBC5 /* WarehouseResponse.swift in Sources */,
+				7B618C8A221CEB7C0057C1F8 /* DroneVideoPreviewView.swift in Sources */,
+				E17D5121221151DB00AFBD9B /* WarehouseMissionViewController.swift in Sources */,
+				E1EF424121FADA15001BB96A /* MobileNet.mlmodel in Sources */,
+				7BA025EF221BE092001F3237 /* UIView+Constraint.swift in Sources */,
+				7B4C251621F80A79001734EC /* DJIVideoPreviewer+Helper.swift in Sources */,
+				7B4C252521F98665001734EC /* DJIMediaManager+Helper.swift in Sources */,
+				A47868E2209AC6DA00DBC666 /* DJIImageAnnotation.swift in Sources */,
+				7B618C92221D24630057C1F8 /* VideoPreviewViewController.swift in Sources */,
+				7B35F65E2202E7000066515F /* BaseViewController.swift in Sources */,
+				7B35F64E2202B9610066515F /* Logger.swift in Sources */,
+				7BEE92BB2204227800DAA40D /* BorderView.swift in Sources */,
+				7B4C251421F807D0001734EC /* DJIProduct+Helper.swift in Sources */,
+				7B88BC1A221A83B6007C1250 /* NotiLogger.swift in Sources */,
+				7B80E9ED21FAF506006A072C /* UIImage+Resize.swift in Sources */,
+				A47868E0209AC6DA00DBC666 /* ProductCommunicationManager.swift in Sources */,
+				7BEE92C62207E3ED00DAA40D /* HttpMethod.swift in Sources */,
+				7B35F6622202F0B80066515F /* CGPoint+Helper.swift in Sources */,
+				E125EA812201B23900F0B044 /* DJIGimbal+Helper.swift in Sources */,
+				A47868D7209AC6DA00DBC666 /* AppDelegate.swift in Sources */,
+				E1DC4779221405C10058F872 /* VirtualStickMission.swift in Sources */,
+				E146DB51221D3C8400547E0A /* MoveMission.swift in Sources */,
+				7B4C252821FAD880001734EC /* QRCodeHelper.swift in Sources */,
+				E1DE16D1221BC5CE00DF82B4 /* DroneState.swift in Sources */,
+				7B4A356021F6F8BE00C0C16C /* DroneCameraViewController.swift in Sources */,
+				E1BC23BC221D28460045F938 /* Timer.swift in Sources */,
+				7B4C251C21F85834001734EC /* PreviewImageViewController.swift in Sources */,
+				E194A04F22141E1F00CE0270 /* SnapShotMission.swift in Sources */,
+				7B4C252021F86A1E001734EC /* PreviewImageCollectionViewCell.swift in Sources */,
+				E17D511D22113B0100AFBD9B /* RotateMission.swift in Sources */,
+				7BEE92C42207E2F800DAA40D /* HttpClient.swift in Sources */,
+				7B35F6542202D7E00066515F /* MenuListViewController.swift in Sources */,
+				A47868E1209AC6DA00DBC666 /* StartupViewController.swift in Sources */,
+				7B8B094222112A57006DBBC5 /* WarehouseItem.swift in Sources */,
+				7B35F65B2202E58F0066515F /* ThemeManager.swift in Sources */,
+				E16E10E3221C150F0003D41E /* IndoorFlyingViewController.swift in Sources */,
+				7B35F6602202EA650066515F /* MenuListCellViewModel.swift in Sources */,
+				E114CD1F21FFFEE300944CD0 /* AutoFlyViewController.swift in Sources */,
+				E114CD212200058C00944CD0 /* DJIHelper.swift in Sources */,
+				7BA08A8521FEED1000E6C57B /* TestQRViewController.swift in Sources */,
+				7B4C252321F95B02001734EC /* UIViewController+Navigation.swift in Sources */,
+				E199BEC2221A5A970063BCDC /* TestRemoteControllerViewController.swift in Sources */,
+				7B4C251A21F84F11001734EC /* UIViewController+Helper.swift in Sources */,
+				7B4A356621F7134700C0C16C /* NotificationName.swift in Sources */,
+				7B5B9D1321FED81B00FD356E /* QRCodeListViewController.swift in Sources */,
+				E146DB4F221D3C3500547E0A /* VirtualStickMissionProtocol.swift in Sources */,
+				7B8B094622113F99006DBBC5 /* KerryWarehouseDefaultImpl.swift in Sources */,
+				A47868DE209AC6DA00DBC666 /* TimelineElementCollectionViewCell.swift in Sources */,
+				7BEE92C22207E26E00DAA40D /* ApiEndpoint.swift in Sources */,
+				E1D0D02721FF080500B6C346 /* Proximity.mlmodel in Sources */,
+				7B8B094422112AC3006DBBC5 /* KerryWarehouseApi.swift in Sources */,
+				7B35F6582202D97B0066515F /* MenuListCollectionViewCell.swift in Sources */,
+				7BA025F1221BFD1B001F3237 /* UIView+Animation.swift in Sources */,
+				A47868DD209AC6DA00DBC666 /* KeyedInterfaceViewController.swift in Sources */,
+				7B0D21A922150FF3008D3754 /* WarehouseItemFetchResponse.swift in Sources */,
+				E17D511A221139F300AFBD9B /* AutoFlyHelper.swift in Sources */,
+				E146DB4D221D3C0F00547E0A /* MoveUntilQRCodeDetected.swift in Sources */,
+				A47868DF209AC6DA00DBC666 /* TimelineMissionViewController.swift in Sources */,
+				E1C788412213E9D90011A5A6 /* WarehouseMission.swift in Sources */,
+				E17C8D86221E40FD00745E09 /* ScanLevel.swift in Sources */,
+				7BEE92C02207E1D100DAA40D /* HttpResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BEE92E7220807BD00DAA40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86985CC81E834EC200577EC7 /* DJI-Warehouse */;
+			targetProxy = 7BEE92E6220807BD00DAA40D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47868C7209AC6DA00DBC666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47868C8209AC6DA00DBC666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A47868C9209AC6DA00DBC666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47868CA209AC6DA00DBC666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BEE92E9220807BD00DAA40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DJI-WarehouseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuhlke.DJI-WarehouseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJI-Warehouse.app/DJI-Warehouse";
+			};
+			name = Debug;
+		};
+		7BEE92EA220807BD00DAA40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "DJI-WarehouseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuhlke.DJI-WarehouseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJI-Warehouse.app/DJI-Warehouse";
+			};
+			name = Release;
+		};
+		86985CDB1E834EC200577EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86985CDC1E834EC200577EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86985CDE1E834EC200577EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1324009D21FABF94AD89CBEA /* Pods-DJI-Warehouse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../DJIWidget",
+					"\"$(SRCROOT)/../DJIWidget/FFmpeg\"",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DJISDKSwiftDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pak.dji.warehouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		86985CDF1E834EC200577EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3975D6FBB911BF3C218378C /* Pods-DJI-Warehouse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				DEVELOPMENT_TEAM = JDFT4SYY26;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../DJIWidget",
+					"\"$(SRCROOT)/../DJIWidget/FFmpeg\"",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/DJISDKSwiftDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pak.dji.warehouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BEE92E8220807BD00DAA40D /* Build configuration list for PBXNativeTarget "DJI-WarehouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEE92E9220807BD00DAA40D /* Debug */,
+				7BEE92EA220807BD00DAA40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86985CC41E834EC200577EC7 /* Build configuration list for PBXProject "DJI-Warehouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86985CDB1E834EC200577EC7 /* Debug */,
+				86985CDC1E834EC200577EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86985CDD1E834EC200577EC7 /* Build configuration list for PBXNativeTarget "DJI-Warehouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86985CDE1E834EC200577EC7 /* Debug */,
+				86985CDF1E834EC200577EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86985CC11E834EC200577EC7 /* Project object */;
+}

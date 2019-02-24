@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PreviewImageCollectionViewCell" customModule="DJISDKSwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZdO-1q-INE">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZdO-1q-INE" secondAttribute="bottom" id="mrl-RP-Wxz"/>
+                <constraint firstAttribute="trailing" secondItem="ZdO-1q-INE" secondAttribute="trailing" id="sQa-x5-nxg"/>
+                <constraint firstItem="ZdO-1q-INE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vAf-Ds-C4P"/>
+                <constraint firstItem="ZdO-1q-INE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vMU-zQ-N76"/>
+            </constraints>
+            <size key="customSize" width="198" height="108"/>
+            <connections>
+                <outlet property="previewImageView" destination="ZdO-1q-INE" id="ofK-Or-DqD"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="159.22038980509745"/>
+        </collectionViewCell>
+    </objects>
+</document>
